@@ -380,6 +380,15 @@ address {
   }
 }
 
+.section-top {
+  margin-top: 160px;
+}
+@media (max-width: 1280px) {
+  .section-top {
+    margin-top: 80px;
+  }
+}
+
 .main_title_dark {
   font-family: "Trajan Pro", sans-serif;
   font-size: 128px;
@@ -528,10 +537,12 @@ address {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+  text-transform: uppercase;
   color: #282828;
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
   gap: 20px;
 }
 .main_btn svg {
@@ -769,14 +780,6 @@ address {
   margin-bottom: 20px;
 }
 
-.contact {
-  margin-top: 160px;
-}
-@media (max-width: 1023px) {
-  .contact {
-    margin-top: 80px;
-  }
-}
 .contact__in {
   display: flex;
   align-items: start;
@@ -1076,6 +1079,285 @@ address {
           text-decoration-skip-ink: none;
   color: #6C6C6C;
   text-transform: uppercase;
+}
+
+.vip-rooms__in {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 100px;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__in {
+    gap: 80px;
+    margin-top: 40px;
+  }
+}
+.vip-rooms__block {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block {
+    gap: 40px;
+    flex-direction: column;
+  }
+}
+.vip-rooms__block-texts {
+  margin-top: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block-texts {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 40px;
+  }
+}
+.vip-rooms__block-texts p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #949494;
+}
+.vip-rooms__block-texts .main_btn {
+  flex-direction: row-reverse;
+}
+.vip-rooms__block-texts .main_btn svg {
+  display: flex;
+}
+.vip-rooms__block-one {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.vip-rooms__block-one img {
+  width: 100%;
+  height: 316px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block-one img {
+    height: 550px;
+  }
+}
+@media (max-width: 767px) {
+  .vip-rooms__block-one img {
+    height: 250px;
+  }
+}
+.vip-rooms__block-two {
+  flex: 2;
+  height: 100%;
+  height: 515px;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block-two .vip-rooms__block-texts {
+    margin-top: 0;
+  }
+}
+.vip-rooms__block-two p {
+  max-width: 610px;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block-two p {
+    max-width: 100%;
+  }
+}
+.vip-rooms__block-two img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block-two img {
+    display: none;
+  }
+}
+.vip-rooms__block-text {
+  margin: 45px 0 77px 0;
+  padding-top: 10px;
+  border-top: 1px solid #949494;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block-text {
+    margin: 40px 0;
+  }
+}
+.vip-rooms__block-text p,
+.vip-rooms__block-text span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+  text-transform: uppercase;
+}
+.vip-rooms__block h6 {
+  font-family: "Trajan Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+  text-transform: uppercase;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block__bottom {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block__bottom .vip-rooms__block-two img {
+    display: flex;
+  }
+}
+.vip-rooms__block__bottom .vip-rooms__block-two .vip-rooms__block-texts {
+  gap: 32px;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block__bottom .vip-rooms__block-two .vip-rooms__block-texts {
+    gap: 40px;
+    margin-top: 40px;
+  }
+}
+.vip-rooms__block__bottom .vip-rooms__block-two .vip-rooms__block-texts p {
+  flex: 1;
+}
+.vip-rooms__block__bottom .vip-rooms__block-two .vip-rooms__block-texts .main_btn {
+  display: none;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block__bottom .vip-rooms__block-two .vip-rooms__block-texts .main_btn {
+    display: flex;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block__bottom .vip-rooms__block-one img {
+    display: none;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block__bottom .vip-rooms__block-one .vip-rooms__block-texts {
+    display: none;
+  }
+}
+.vip-rooms__block__bottom .vip-rooms__block-one .main_btn {
+  margin-left: auto;
+}
+@media (max-width: 1280px) {
+  .vip-rooms__block__bottom .vip-rooms__block-one .main_btn {
+    display: none;
+  }
+}
+
+.exclusive-rooms-in {
+  display: flex;
+  gap: 32px;
+  margin-top: 100px;
+}
+@media (max-width: 1023px) {
+  .exclusive-rooms-in {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .exclusive-rooms-in {
+    gap: 80px;
+    flex-direction: column;
+  }
+}
+.exclusive-rooms__card {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.exclusive-rooms__card h6 {
+  font-family: "Trajan Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+}
+@media (max-width: 1023px) {
+  .exclusive-rooms__card h6 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.exclusive-rooms__card img {
+  width: 100%;
+  height: 402px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1023px) {
+  .exclusive-rooms__card img {
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .exclusive-rooms__card img {
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .exclusive-rooms__card img {
+    height: 250px;
+  }
+}
+.exclusive-rooms__card p {
+  max-width: 340px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+  text-transform: uppercase;
+}
+.exclusive-rooms__card .main_btn {
+  display: none;
+}
+.exclusive-rooms__card .main_btn svg {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .exclusive-rooms__card .main_btn {
+    margin-right: auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .footer__in {

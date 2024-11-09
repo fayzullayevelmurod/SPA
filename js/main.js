@@ -19,24 +19,22 @@ navLink.addEventListener('click', () => {
 var swiper = new Swiper(".treatmentsSwiper", {
   slidesPerView: 1.10,
   spaceBetween: 28,
-  // centeredSlides: true,
-  // slidesPerView: 'auto',
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
     640: {
-      slidesPerView: 2,
-      spaceBetween: 40,
+      slidesPerView: 2.2,
+      spaceBetween: 28,
     },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 40,
+    993: {
+      slidesPerView: 3.2,
+      spaceBetween: 28,
     },
-    1024: {
+    1200: {
       slidesPerView: 3.6,
-      spaceBetween: 50,
+      spaceBetween: 40,
     },
   },
 });

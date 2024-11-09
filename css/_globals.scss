@@ -63,6 +63,14 @@ address {
   }
 }
 
+.section-top {
+  margin-top: 160px;
+
+  @include desktop {
+    margin-top: 80px;
+  }
+}
+
 .main_title {
   &_dark {
     font-family: $font-Trajan;
@@ -205,8 +213,10 @@ address {
   text-align: right;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  text-transform: uppercase;
   color: $color-dark;
   @include flex-full-center();
+  white-space: nowrap;
   gap: 20px;
 
   svg {
