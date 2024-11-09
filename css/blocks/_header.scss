@@ -104,16 +104,20 @@
   position: static;
   background: $color-white;
 
-  &__nav-link {
+  .header__nav-link.dark {
     a {
       color: $color-dark;
+
+      @include desktop {
+        color: $color-white;
+      }
     }
   }
 
-  &__nav-burger {
+  .header__nav-burger {
     svg {
       path {
-        fill: $color-dark;
+        stroke: $color-dark;
       }
     }
   }
