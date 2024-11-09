@@ -1,4 +1,10 @@
 .contact {
+  margin-top: 160px;
+
+  @include tablet {
+    margin-top: 80px;
+  }
+
   &__in {
     display: flex;
     align-items: start;
