@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+span, label {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-Manrope;
+  font-style: normal;
+}
+
+input, textarea {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: calc(1336px);
+  border: 1px solid red;
+  margin: 0 auto;
+
+  @include desktop-big {
+    max-width: calc(100% - 104px);
+  }
+
+  @include desktop {
+    max-width: calc(100% - 72px);
+  }
+}
+
+.main_title {
+  &_dark {
+    font-family: $font-Trajan;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 120px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-dark;
+
+    img {
+      width: 83px;
+      height: 101px;
+
+      @include desktop {
+        width: 29px;
+        height: 36px;
+      }
+    }
+
+    @include desktop {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -1.6296296119689941px;
+    }
+  }
+
+  &_white {
+    font-family: $font-Trajan;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 120px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-white;
+
+    img {
+      width: 83px;
+      height: 101px;
+
+      @include desktop {
+        width: 29px;
+        height: 36px;
+      }
+    }
+
+    @include desktop {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -1.6296296119689941px;
+    }
+  }
+}
+
+.main_btn {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: $color-dark;
+  @include flex-full-center();
+  gap: 20px;
+
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  @include desktop {
+    svg {
+      display: none;
+    }
+  }
+}
