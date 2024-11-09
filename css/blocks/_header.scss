@@ -108,6 +108,11 @@
     a {
       color: $color-dark;
 
+      &:hover {
+        background-color: $color-dark;
+        color: $color-white;
+      }
+
       @include desktop {
         color: $color-white;
       }

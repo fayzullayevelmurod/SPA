@@ -1,0 +1,70 @@
+.terms {
+  padding: 70px 0 160px 0;
+
+  @include desktop {
+    padding: 50px 0;
+  }
+
+  &__in {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1106px;
+
+    @include desktop {
+      gap: 40px;
+      margin-top: 40px;
+    }
+  }
+
+  &__block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 880px;
+
+    @include desktop {
+      gap: 30px;
+    }
+  }
+
+  &__in-block {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    justify-content: space-between;
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21.86px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $color-grey-2;
+
+      @include desktop {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__number,
+  &__title {
+    font-family: $font-Trajan;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-dark;
+    text-transform: uppercase;
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}

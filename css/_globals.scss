@@ -132,6 +132,9 @@ address {
   padding-bottom: 30px;
 
   @include desktop {
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: -2px;
     padding-bottom: 40px;
   }
 }
