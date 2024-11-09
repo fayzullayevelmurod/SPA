@@ -52,7 +52,6 @@ address {
 
 .container {
   max-width: calc(1336px);
-  border: 1px solid red;
   margin: 0 auto;
 
   @include desktop-big {
@@ -117,6 +116,23 @@ address {
       line-height: 48px;
       letter-spacing: -1.6296296119689941px;
     }
+  }
+}
+
+.sub_title {
+  font-family: $font-Trajan;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: $color-dark;
+  border-bottom: 1px solid $color-grey;
+  padding-bottom: 30px;
+
+  @include desktop {
+    padding-bottom: 40px;
   }
 }
 

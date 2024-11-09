@@ -1,0 +1,43 @@
+.footer {
+  &__in {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-top: 1px solid $color-grey;
+    padding-top: 37px;
+    padding-bottom: 60px;
+
+    @include desktop {
+      flex-direction: column;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: start;
+    gap: 120px;
+
+    @include desktop {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 10px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $color-dark;
+      text-transform: uppercase;
+    }
+  }
+}
