@@ -1,0 +1,61 @@
+.tab-container {
+  display: flex;
+  flex-direction: column;
+
+  &__tabs {
+    display: flex;
+    gap: 4px;
+
+    @include mobile {
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &-button {
+        font-family: $font-Manrope;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19.12px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $color-dark;
+        text-transform: uppercase;
+        padding: 20px;
+        border-radius: 30px;
+        @include transition();
+        text-align: center;
+
+        &:hover {
+          background: $color-dark;
+          color: $color-white;
+        }
+
+        @include desktop-big {
+          padding: 13px;
+        }
+
+      &--active {
+        background-color: $color-dark;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+.tab-block {
+  @include desktop {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}

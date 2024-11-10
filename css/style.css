@@ -366,7 +366,7 @@ address {
 }
 
 .container {
-  max-width: 1336px;
+  max-width: 1337px;
   margin: 0 auto;
 }
 @media (max-width: 1500px) {
@@ -396,7 +396,7 @@ address {
 
 .main_title_dark {
   font-family: "Trajan Pro", sans-serif;
-  font-size: 128px;
+  font-size: 127px;
   font-weight: 700;
   line-height: 120px;
   text-align: left;
@@ -425,7 +425,7 @@ address {
 }
 .main_title_white {
   font-family: "Trajan Pro", sans-serif;
-  font-size: 128px;
+  font-size: 127px;
   font-weight: 700;
   line-height: 120px;
   text-align: left;
@@ -600,6 +600,11 @@ address {
 @media (max-width: 1280px) {
   .header__nav-link-close {
     display: flex;
+  }
+}
+@media (max-width: 450px) {
+  .header__nav-link-close {
+    right: 24px;
   }
 }
 .header__nav-link.active {
@@ -1876,6 +1881,64 @@ address {
 }
 .text-block_list ul li:last-child {
   padding: 10px 0 0 0;
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+}
+.tab-container__tabs {
+  display: flex;
+  gap: 4px;
+}
+@media (max-width: 767px) {
+  .tab-container__tabs {
+    overflow-x: scroll;
+  }
+  .tab-container__tabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+.tab-container__tabs-button {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.12px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  text-align: center;
+}
+.tab-container__tabs-button:hover {
+  background: #282828;
+  color: #FFFFFF;
+}
+@media (max-width: 1500px) {
+  .tab-container__tabs-button {
+    padding: 13px;
+  }
+}
+.tab-container__tabs-button--active {
+  background-color: #282828;
+  color: #FFFFFF;
+}
+.tab-container__content {
+  display: none;
+}
+.tab-container__content--active {
+  display: block;
+}
+
+@media (max-width: 1280px) {
+  .tab-block {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 }
 
 .footer__in {

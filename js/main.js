@@ -38,3 +38,23 @@ var swiper = new Swiper(".treatmentsSwiper", {
     },
   },
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabButtons = document.querySelectorAll(".tab-container__tabs-button");
+  const tabContents = document.querySelectorAll(".tab-container__content");
+
+  tabButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const targetTab = button.getAttribute("data-tab");
+
+      // Faol tab va kontent sinflarini olib tashlash
+      tabButtons.forEach(btn => btn.classList.remove("tab-container__tabs-button--active"));
+      tabContents.forEach(content => content.classList.remove("tab-container__content--active"));
+
+      // Tanlangan tabni va mazmunini faollashtirish
+      button.classList.add("tab-container__tabs-button--active");
+      document.getElementById(targetTab).classList.add("tab-container__content--active");
+    });
+  });
+});

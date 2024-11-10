@@ -40,6 +40,10 @@
       @include desktop {
         display: flex;
       }
+
+      @include mobile-mini {
+        right: 24px;
+      }
     }
 
     &.active {

@@ -51,7 +51,7 @@ address {
 }
 
 .container {
-  max-width: calc(1336px);
+  max-width: calc(1337px);
   margin: 0 auto;
 
   @include desktop-big {
@@ -78,7 +78,7 @@ address {
 .main_title {
   &_dark {
     font-family: $font-Trajan;
-    font-size: 128px;
+    font-size: 127px;
     font-weight: 700;
     line-height: 120px;
     text-align: left;
@@ -106,7 +106,7 @@ address {
 
   &_white {
     font-family: $font-Trajan;
-    font-size: 128px;
+    font-size: 127px;
     font-weight: 700;
     line-height: 120px;
     text-align: left;
