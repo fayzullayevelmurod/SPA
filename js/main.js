@@ -48,11 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       const targetTab = button.getAttribute("data-tab");
 
-      // Faol tab va kontent sinflarini olib tashlash
       tabButtons.forEach(btn => btn.classList.remove("tab-container__tabs-button--active"));
       tabContents.forEach(content => content.classList.remove("tab-container__content--active"));
 
-      // Tanlangan tabni va mazmunini faollashtirish
       button.classList.add("tab-container__tabs-button--active");
       document.getElementById(targetTab).classList.add("tab-container__content--active");
     });

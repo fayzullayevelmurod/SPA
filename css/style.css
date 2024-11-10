@@ -1941,6 +1941,72 @@ address {
   }
 }
 
+.pagination_in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .pagination_in {
+    gap: 10px;
+  }
+}
+.pagination_btn {
+  background: #E1E1E1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .pagination_btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .pagination_btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+.pagination a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #B1B1B1;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #1E2129;
+  transition: 0.3s ease;
+}
+@media (max-width: 767px) {
+  .pagination a {
+    width: 40px;
+    height: 40px;
+  }
+}
+.pagination a:hover {
+  background-color: #E1E1E1;
+}
+.pagination a.active {
+  background-color: #282828;
+  color: #FFFFFF;
+}
+
 .footer__in {
   display: flex;
   justify-content: space-between;
