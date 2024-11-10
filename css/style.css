@@ -1659,6 +1659,57 @@ address {
     height: 250px;
   }
 }
+.text-block_list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.text-block_list-head h5 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+  text-transform: uppercase;
+}
+.text-block_list-head span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+  text-transform: uppercase;
+}
+.text-block_list .head_right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.text-block_list ul li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+  text-transform: uppercase;
+  border-top: 1px solid #949494;
+  padding: 10px 0 20px 0;
+}
+.text-block_list ul li:last-child {
+  padding: 10px 0 0 0;
+}
 .text-block h6 {
   font-family: "Trajan Pro", sans-serif;
   font-size: 24px;
