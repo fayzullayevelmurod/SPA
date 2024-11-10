@@ -1696,6 +1696,23 @@ address {
   color: #6C6C6C;
 }
 
+.kids-home {
+  background-image: url("../../images/kids-mini-zoo_bg.png");
+}
+.kids-home p {
+  margin-top: 150px;
+}
+@media (max-width: 1280px) {
+  .kids-home p {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .kids-product .product_block_right {
+    display: none;
+  }
+}
+
 .footer__in {
   display: flex;
   justify-content: space-between;

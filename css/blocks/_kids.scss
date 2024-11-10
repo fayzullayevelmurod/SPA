@@ -1,0 +1,21 @@
+.kids {
+  &-home {
+    background-image: url('../../images/kids-mini-zoo_bg.png');
+
+    p {
+      margin-top: 150px;
+
+      @include desktop {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-product {
+    .product_block_right {
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+}
