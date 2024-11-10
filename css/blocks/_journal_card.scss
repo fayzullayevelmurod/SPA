@@ -1,0 +1,165 @@
+.journal_card {
+  &_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: -0.4000000059604645px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $color-grey-2;
+    }
+
+    .main_btn {
+      svg {
+        display: flex;
+      }
+    }
+  }
+}
+
+.journal_block {
+  margin-top: 100px;
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+
+  @include desktop {
+    margin-top: 40px;
+  }
+
+  &_mini {
+    margin-left: auto;
+    max-width: 195px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    gap: 40px;
+
+    img {
+      height: 195px;
+      width: 100%;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19.12px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $color-grey-2;
+      text-transform: uppercase;
+    }
+  }
+
+  h5 {
+    font-family: $font-Trajan;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-dark;
+  }
+
+  &-left {
+    display: flex;
+    gap: 40px;
+    max-width: 720px;
+
+    @include tablet {
+      max-width: 100%;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &-right {
+    width: 574px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    img {
+      height: 402px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      .journal_block-card_img {
+
+        svg {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
+
+    &_img {
+      position: relative;
+
+      svg {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        @include transition();
+        z-index: 2;
+
+        path {
+          @include transition();
+        }
+      }
+    }
+  }
+
+
+  h6 {
+    font-family: $font-Trajan;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-dark;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.12px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-grey-2;
+    text-transform: uppercase;
+  }
+}

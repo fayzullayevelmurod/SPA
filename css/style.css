@@ -2024,6 +2024,10 @@ address {
 .pagination a:hover {
   background-color: #E1E1E1;
 }
+.pagination a:active {
+  background-color: #1E2129;
+  color: #E1E1E1;
+}
 .pagination a.active {
   background-color: #282828;
   color: #FFFFFF;
@@ -2077,6 +2081,157 @@ address {
   }
 }
 .treatments_cards .treatments_card p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+  text-transform: uppercase;
+}
+
+.journal_card_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.journal_card_bottom span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.400000006px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+}
+.journal_card_bottom .main_btn svg {
+  display: flex;
+}
+
+.journal_block {
+  margin-top: 100px;
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+}
+@media (max-width: 1280px) {
+  .journal_block {
+    margin-top: 40px;
+  }
+}
+.journal_block_mini {
+  margin-left: auto;
+  max-width: 195px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.journal_block_mini img {
+  height: 195px;
+  width: 100%;
+}
+.journal_block_mini span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+  text-transform: uppercase;
+}
+.journal_block h5 {
+  font-family: "Trajan Pro", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+}
+.journal_block-left {
+  display: flex;
+  gap: 40px;
+  max-width: 720px;
+}
+@media (max-width: 1023px) {
+  .journal_block-left {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .journal_block-left {
+    flex-direction: column;
+  }
+}
+.journal_block-right {
+  width: 574px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .journal_block-right {
+    display: none;
+  }
+}
+.journal_block-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.journal_block-card img {
+  height: 402px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.journal_block-card:hover .journal_block-card_img svg {
+  transform: translate(-50%, -50%) scale(1);
+}
+.journal_block-card_img {
+  position: relative;
+}
+.journal_block-card_img svg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s ease;
+  z-index: 2;
+}
+.journal_block-card_img svg path {
+  transition: 0.3s ease;
+}
+.journal_block h6 {
+  font-family: "Trajan Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+}
+@media (max-width: 1023px) {
+  .journal_block h6 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.journal_block p {
   font-size: 14px;
   font-weight: 500;
   line-height: 19.12px;

@@ -59,6 +59,11 @@
     &:hover {
       background-color: #E1E1E1;
     }
+
+    &:active {
+      background-color: #1E2129;
+      color: #E1E1E1;
+    }
   }
 
   a.active {
