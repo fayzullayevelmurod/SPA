@@ -36,6 +36,7 @@
     @include tablet {
       max-width: 100%;
       width: 100%;
+      align-items: start;
     }
 
     img {
@@ -98,5 +99,11 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: $color-grey-2;
+  }
+
+  .main_btn {
+    svg {
+      display: flex;
+    }
   }
 }

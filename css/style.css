@@ -404,6 +404,7 @@ address {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: #282828;
+  text-transform: uppercase;
 }
 .main_title_dark img {
   width: 83px;
@@ -432,6 +433,7 @@ address {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 .main_title_white img {
   width: 83px;
@@ -1627,6 +1629,7 @@ address {
   .text-block_right {
     max-width: 100%;
     width: 100%;
+    align-items: start;
   }
 }
 .text-block_right img {
@@ -1695,6 +1698,9 @@ address {
           text-decoration-skip-ink: none;
   color: #6C6C6C;
 }
+.text-block .main_btn svg {
+  display: flex;
+}
 
 .kids-home {
   background-image: url("../../images/kids-mini-zoo_bg.png");
@@ -1711,6 +1717,10 @@ address {
   .kids-product .product_block_right {
     display: none;
   }
+}
+
+.restaurant {
+  background-image: url("../../images/restaurant-img.png");
 }
 
 .footer__in {
