@@ -1,0 +1,79 @@
+.cook {
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include tablet {
+      gap: 20px;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+    width: 424px;
+    height: 424px;
+    object-fit: cover;
+
+    @include tablet {
+      margin: 0 auto;
+    }
+
+    @include mobile-s {
+      width: 250px;
+      height: 250px;
+      min-width: 250px;
+      min-height: 250px;
+    }
+  }
+
+  h6 {
+    font-family: $font-Trajan;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-dark;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.12px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-dark;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-grey-2;
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+}

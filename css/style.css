@@ -1723,6 +1723,89 @@ address {
   background-image: url("../../images/restaurant-img.png");
 }
 
+.cook_text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1023px) {
+  .cook_text {
+    gap: 20px;
+  }
+}
+.cook .container {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+@media (max-width: 1023px) {
+  .cook .container {
+    flex-direction: column;
+  }
+}
+.cook img {
+  border-radius: 50%;
+  width: 424px;
+  height: 424px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1023px) {
+  .cook img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .cook img {
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+  }
+}
+.cook h6 {
+  font-family: "Trajan Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+}
+@media (max-width: 1023px) {
+  .cook h6 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.cook span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+}
+.cook p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.86px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+}
+@media (max-width: 1023px) {
+  .cook p {
+    font-size: 14px;
+  }
+}
+
 .footer__in {
   display: flex;
   justify-content: space-between;
