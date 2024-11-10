@@ -1043,6 +1043,11 @@ address {
   flex-direction: column;
   gap: 40px;
 }
+@media (max-width: 767px) {
+  .treatments-slider .treatments__card {
+    gap: 20px;
+  }
+}
 .treatments-slider .treatments__card:hover svg {
   transform: translate(-50%, -50%) scale(1);
 }
@@ -1804,6 +1809,21 @@ address {
   .cook p {
     font-size: 14px;
   }
+}
+
+@media (max-width: 767px) {
+  .journal-slider .treatments__card {
+    gap: 20px;
+  }
+}
+.journal-slider .treatments__card h6 {
+  order: 2;
+}
+.journal-slider .treatments__card-img {
+  order: 1;
+}
+.journal-slider .treatments__card p {
+  order: 3;
 }
 
 .footer__in {

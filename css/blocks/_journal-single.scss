@@ -1,0 +1,20 @@
+.journal-slider {
+  .treatments__card {
+
+    @include mobile {
+      gap: 20px;
+    }
+
+    h6 {
+      order: 2;
+    }
+
+    &-img {
+      order: 1;
+    }
+
+    p {
+      order: 3;
+    }
+  }
+}
