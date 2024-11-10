@@ -312,6 +312,7 @@ template {
   src: url("../fonts/trajan-pro/TrajanPro-Bold.woff2") format("woff2"), url("../fonts/trajan-pro/TrajanPro-Bold.woff") format("woff"), url("../fonts/trajan-pro/TrajanPro-Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 .grid-container {
   display: grid;
@@ -363,6 +364,7 @@ html {
 body {
   font-family: "Manrope", sans-serif;
   font-style: normal;
+  font-display: swap;
 }
 
 input, textarea {
