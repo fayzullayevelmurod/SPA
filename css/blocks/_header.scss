@@ -103,6 +103,11 @@
 .header.dark {
   position: static;
   background: $color-white;
+  margin-bottom: 70px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
 
   .header__nav-link.dark {
     a {
@@ -116,6 +121,11 @@
       @include desktop {
         color: $color-white;
       }
+    }
+
+    a.active {
+      background-color: $color-dark;
+      color: $color-white;
     }
   }
 

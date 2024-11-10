@@ -1,0 +1,25 @@
+.gallery {
+  margin-top: 100px;
+
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .product_block_right {
+    width: 100%;
+    
+    img {
+      display: flex;
+    }
+  }
+
+  .product_block_in {
+    margin-top: 0;
+  }
+}
