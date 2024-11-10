@@ -313,6 +313,28 @@ template {
   font-weight: bold;
   font-style: normal;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1300px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 993px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2005,6 +2027,65 @@ address {
 .pagination a.active {
   background-color: #282828;
   color: #FFFFFF;
+}
+
+.treatments_cards {
+  margin-top: 100px;
+}
+@media (max-width: 1280px) {
+  .treatments_cards {
+    margin-top: 40px;
+  }
+}
+.treatments_cards .container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+@media (max-width: 1280px) {
+  .treatments_cards .container {
+    gap: 80px;
+  }
+}
+.treatments_cards .treatments_card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.treatments_cards .treatments_card img {
+  width: 100%;
+  height: 364px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.treatments_cards .treatments_card h6 {
+  font-family: "Trajan Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+  text-transform: uppercase;
+}
+@media (max-width: 1280px) {
+  .treatments_cards .treatments_card h6 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.treatments_cards .treatments_card p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+  text-transform: uppercase;
 }
 
 .footer__in {
