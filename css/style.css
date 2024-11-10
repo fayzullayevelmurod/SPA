@@ -1582,6 +1582,115 @@ address {
   margin-top: 0;
 }
 
+.text-block {
+  margin: 100px 0;
+}
+@media (max-width: 1023px) {
+  .text-block {
+    margin: 80px 0;
+  }
+}
+.text-block .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 1023px) {
+  .text-block .container {
+    flex-direction: column-reverse;
+  }
+}
+.text-block_left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 880px;
+}
+@media (max-width: 1023px) {
+  .text-block_left {
+    max-width: 100%;
+  }
+}
+.text-block_right {
+  max-width: 195px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1023px) {
+  .text-block_right {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.text-block_right img {
+  min-width: 195px;
+}
+@media (max-width: 1023px) {
+  .text-block_right img {
+    height: 550px;
+    width: 100%;
+    min-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .text-block_right img {
+    height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .text-block_right img {
+    height: 250px;
+  }
+}
+.text-block h6 {
+  font-family: "Trajan Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #282828;
+}
+@media (max-width: 1023px) {
+  .text-block h6 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.text-block p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.86px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+}
+@media (max-width: 1023px) {
+  .text-block p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+.text-block span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #6C6C6C;
+}
+
 .footer__in {
   display: flex;
   justify-content: space-between;
