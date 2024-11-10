@@ -61,6 +61,10 @@ address {
   @include desktop {
     max-width: calc(100% - 72px);
   }
+
+  @include mobile-mini {
+    max-width: calc(100% - 30px);
+  }
 }
 
 .section-top {

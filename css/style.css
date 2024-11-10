@@ -379,6 +379,11 @@ address {
     max-width: calc(100% - 72px);
   }
 }
+@media (max-width: 450px) {
+  .container {
+    max-width: calc(100% - 30px);
+  }
+}
 
 .section-top {
   margin-top: 160px;
@@ -1583,11 +1588,11 @@ address {
 }
 
 .text-block {
-  margin: 100px 0;
+  margin-top: 100px;
 }
 @media (max-width: 1023px) {
   .text-block {
-    margin: 80px 0;
+    margin-top: 80px;
   }
 }
 .text-block .container {
