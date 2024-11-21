@@ -106,6 +106,10 @@
     align-items: center;
     gap: 20px;
     text-transform: uppercase;
+
+    svg {
+      flex-shrink: 0;
+    }
   }
 
   .main_title_white {

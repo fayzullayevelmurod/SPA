@@ -577,6 +577,7 @@ address {
   gap: 20px;
 }
 .main_btn svg {
+  flex-shrink: 0;
   width: 50px;
   height: 50px;
 }
@@ -821,6 +822,9 @@ address {
   align-items: center;
   gap: 20px;
   text-transform: uppercase;
+}
+.home .home__link svg {
+  flex-shrink: 0;
 }
 .home .main_title_white {
   margin-bottom: 20px;
@@ -1084,6 +1088,7 @@ address {
   position: relative;
 }
 .treatments-slider .treatments__card-img svg {
+  flex-shrink: 0;
   position: absolute;
   top: 50%;
   left: 50%;
